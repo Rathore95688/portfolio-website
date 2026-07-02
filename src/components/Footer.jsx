@@ -1,3 +1,5 @@
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+
 const Footer = () => {
   return (
     <footer className="bg-black text-gray-400 py-8">
@@ -13,25 +15,25 @@ const Footer = () => {
           © {new Date().getFullYear()} Harsh Rathore. All Rights Reserved.
         </p>
 
-        {/* Social Links */}
-        <div className="flex gap-6 mt-4 md:mt-0">
+        {/* Social Icons */}
+        <div className="flex gap-5 mt-4 md:mt-0">
 
           <a
             href="https://github.com/Rathore95688"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-cyan-400 transition duration-300"
+            className="text-2xl hover:text-cyan-400 transition duration-300"
           >
-            GitHub
+            <FaGithub />
           </a>
 
           <a
             href="https://www.linkedin.com/in/harsh-rathore-772124294"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-cyan-400 transition duration-300"
+            className="text-2xl hover:text-cyan-400 transition duration-300"
           >
-            LinkedIn
+            <FaLinkedin />
           </a>
 
         </div>
