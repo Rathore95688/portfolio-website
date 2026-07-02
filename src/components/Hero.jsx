@@ -45,21 +45,31 @@ const Hero = () => {
             software quality through manual and QA testing.
           </p>
 
-          <div className="flex gap-4 mt-8">
-            <a
-              href="#projects"
-              className="bg-cyan-500 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-600 transition"
-            >
-              View Projects
-            </a>
+<div className="flex flex-wrap gap-4 mt-8">
 
-            <a
-              href="#contact"
-              className="border border-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-500 hover:text-black transition"
-            >
-              Contact Me
-            </a>
-          </div>
+  <a
+    href="#projects"
+    className="bg-cyan-500 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-600 transition"
+  >
+    View Projects
+  </a>
+
+  <a
+    href="/resume.pdf"
+    download
+    className="bg-white text-black px-6 py-3 rounded-xl font-semibold hover:bg-gray-200 transition"
+  >
+    📄 Download Resume
+  </a>
+
+  <a
+    href="#contact"
+    className="border border-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-500 hover:text-black transition"
+  >
+    Contact Me
+  </a>
+
+</div>
 
           <div className="flex gap-6 mt-8 text-3xl">
             <a
