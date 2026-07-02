@@ -2,50 +2,51 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center bg-gray-950 text-white px-6"
+      className="min-h-screen bg-gray-950 text-white flex items-center"
     >
-      <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
 
-        {/* Left Side */}
+        {/* Left */}
         <div>
           <p className="text-cyan-400 text-lg mb-2">
-            Hello, I'm
+            👋 Hello, I'm
           </p>
 
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
-            Harsh Rathore
+          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+            Harsh <span className="text-cyan-400">Rathore</span>
           </h1>
 
           <h2 className="text-2xl md:text-3xl text-gray-300 mt-4">
             Frontend Developer & QA Tester
           </h2>
 
-          <p className="text-gray-400 mt-6 leading-7">
-            I build responsive web applications with React, Tailwind CSS and
-            perform Manual & Automation Testing to deliver high-quality software.
+          <p className="mt-6 text-gray-400 leading-8 max-w-xl">
+            Passionate about building modern, responsive web applications using
+            React and Tailwind CSS while ensuring software quality through
+            Manual and Automation Testing.
           </p>
 
-          <div className="mt-8 flex gap-4">
+          <div className="flex gap-4 mt-8">
             <a
               href="#projects"
-              className="bg-cyan-500 px-6 py-3 rounded-lg hover:bg-cyan-600 transition"
+              className="bg-cyan-500 px-6 py-3 rounded-xl font-semibold hover:bg-cyan-600 duration-300"
             >
               View Projects
             </a>
 
             <a
               href="#contact"
-              className="border border-cyan-500 px-6 py-3 rounded-lg hover:bg-cyan-500 transition"
+              className="border border-cyan-500 px-6 py-3 rounded-xl hover:bg-cyan-500 duration-300"
             >
               Contact Me
             </a>
           </div>
         </div>
 
-        {/* Right Side */}
+        {/* Right */}
         <div className="flex justify-center">
-          <div className="w-72 h-72 rounded-full bg-cyan-500/20 border-4 border-cyan-500 flex items-center justify-center">
-            <span className="text-7xl">👨‍💻</span>
+          <div className="w-80 h-80 rounded-full bg-cyan-500/20 border-4 border-cyan-500 flex items-center justify-center text-8xl">
+            💻
           </div>
         </div>
 
