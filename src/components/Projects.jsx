@@ -2,76 +2,97 @@ const projects = [
   {
     title: "Campus Bite",
     description:
-      "A modern food ordering website developed using React, Vite and Tailwind CSS with a responsive and user-friendly interface.",
-    tech: "React • Vite • Tailwind CSS",
+      "A modern food ordering web application with a responsive UI, fast performance, and seamless user experience.",
+    tech: ["React", "Vite", "Tailwind CSS"],
+    github: "https://github.com/Rathore95688",
     live: "#",
-    github: "#",
   },
   {
     title: "PlaceRise",
     description:
-      "A placement preparation platform featuring company information, interview experiences, aptitude resources and student support.",
-    tech: "React • JavaScript • Tailwind CSS",
+      "A placement preparation platform providing company information, interview resources, and career guidance.",
+    tech: ["React", "JavaScript", "Tailwind CSS"],
+    github: "https://github.com/Rathore95688",
     live: "#",
-    github: "#",
   },
   {
     title: "Portfolio Website",
     description:
-      "A premium personal portfolio showcasing my frontend development and QA testing skills, projects and contact information.",
-    tech: "React • Vite • Tailwind CSS",
+      "A premium portfolio showcasing my frontend development and QA testing skills with a modern UI.",
+    tech: ["React", "Framer Motion", "Tailwind CSS"],
+    github: "https://github.com/Rathore95688",
     live: "#",
-    github: "#",
   },
 ];
 
 const Projects = () => {
   return (
-    <section
-      id="projects"
-      className="bg-gray-900 text-white py-24 px-6"
-    >
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">
-          My <span className="text-cyan-400">Projects</span>
+    <section id="projects" className="bg-gray-900 py-24 px-6 text-white">
+      <div className="max-w-7xl mx-auto">
+
+        <h2 className="text-5xl font-bold text-center mb-14">
+          Featured <span className="text-cyan-400">Projects</span>
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
+
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 rounded-2xl p-6 border border-cyan-500 hover:-translate-y-2 transition duration-300"
+              className="rounded-3xl overflow-hidden bg-gray-800 border border-gray-700 hover:border-cyan-400 hover:-translate-y-3 transition-all duration-300 shadow-lg"
             >
-              <h3 className="text-2xl font-bold mb-4">
-                {project.title}
-              </h3>
+              {/* Placeholder Image */}
+              <div className="h-52 bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center text-6xl">
+                💻
+              </div>
 
-              <p className="text-gray-300 mb-6">
-                {project.description}
-              </p>
+              <div className="p-6">
 
-              <p className="text-cyan-400 font-semibold mb-6">
-                {project.tech}
-              </p>
+                <h3 className="text-2xl font-bold mb-3">
+                  {project.title}
+                </h3>
 
-              <div className="flex gap-4">
-                <a
-                  href={project.live}
-                  className="bg-cyan-500 px-4 py-2 rounded-lg hover:bg-cyan-600"
-                >
-                  Live Demo
-                </a>
+                <p className="text-gray-400 leading-7 mb-5">
+                  {project.description}
+                </p>
 
-                <a
-                  href={project.github}
-                  className="border border-cyan-500 px-4 py-2 rounded-lg hover:bg-cyan-500 hover:text-black"
-                >
-                  GitHub
-                </a>
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {project.tech.map((item) => (
+                    <span
+                      key={item}
+                      className="bg-cyan-500/20 text-cyan-300 px-3 py-1 rounded-full text-sm"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+
+                <div className="flex gap-4">
+
+                  <a
+                    href={project.live}
+                    className="flex-1 text-center bg-cyan-500 py-3 rounded-xl hover:bg-cyan-600 transition"
+                  >
+                    Live Demo
+                  </a>
+
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex-1 text-center border border-cyan-400 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition"
+                  >
+                    GitHub
+                  </a>
+
+                </div>
+
               </div>
             </div>
           ))}
+
         </div>
+
       </div>
     </section>
   );
