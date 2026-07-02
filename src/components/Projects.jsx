@@ -4,7 +4,7 @@ const projects = [
     description:
       "A modern food ordering website developed using React, Vite and Tailwind CSS with a responsive and user-friendly interface.",
     tech: "React • Vite • Tailwind CSS",
-    live: "live: "https://campusbite.vercel.app",",
+    live: "#",
     github: "#",
   },
   {
