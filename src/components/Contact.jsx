@@ -1,4 +1,37 @@
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
+
 const Contact = () => {
+  const form = useRef();
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .sendForm(
+        "service_wr437vs",
+        "template_8yoklaf",
+        form.current,
+        "bL9ZiYOKPNfasa0cU"
+      )
+      .then(() => {
+        setMessage("✅ Message sent successfully!");
+        form.current.reset();
+        setLoading(false);
+
+        setTimeout(() => {
+          setMessage("");
+        }, 3000);
+      })
+      .catch(() => {
+        setMessage("❌ Failed to send message.");
+        setLoading(false);
+      });
+  };
+
   return (
     <section
       id="contact"
@@ -19,53 +52,76 @@ const Contact = () => {
             </h3>
 
             <p className="text-gray-400 mb-8 leading-7">
-              I'm looking for Frontend Developer, Web Developer, QA Tester and Software
-              Testing opportunities. Feel free to contact me.
+              I'm looking for Frontend Developer, Web Developer, QA Tester and
+              Software Testing opportunities. Feel free to contact me.
             </p>
 
             <div className="space-y-4">
+
               <a
-  href="mailto:rathoreharsh641@gmail.com"
-  className="flex items-center gap-2 hover:text-cyan-400 transition duration-300"
->
-  📧 <strong>Email:</strong> rathoreharsh641@gmail.com
+                href="mailto:rathoreharsh641@gmail.com"
+                className="block hover:text-cyan-400 transition"
+              >
+                📧 <strong>Email:</strong> rathoreharsh641@gmail.com
               </a>
 
-              <p>
+              <a
+                href="tel:+919568851957"
+                className="block hover:text-cyan-400 transition"
+              >
                 📱 <strong>Phone:</strong> +91 9568851957
-              </p>
+              </a>
 
               <p>
                 📍 <strong>Location:</strong> India
               </p>
+
             </div>
           </div>
 
           {/* Right */}
-          <form className="space-y-5">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="space-y-5"
+          >
             <input
               type="text"
+              name="from_name"
               placeholder="Your Name"
+              required
               className="w-full p-4 rounded-lg bg-gray-800 outline-none border border-gray-700 focus:border-cyan-400"
             />
 
             <input
               type="email"
+              name="from_email"
               placeholder="Your Email"
+              required
               className="w-full p-4 rounded-lg bg-gray-800 outline-none border border-gray-700 focus:border-cyan-400"
             />
 
             <textarea
               rows="5"
+              name="message"
               placeholder="Your Message"
+              required
               className="w-full p-4 rounded-lg bg-gray-800 outline-none border border-gray-700 focus:border-cyan-400"
             ></textarea>
 
             <button
-              className="bg-cyan-500 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-600 transition"
+              type="submit"
+              disabled={loading}
+              className="bg-cyan-500 px-8 py-3 rounded-lg font-semibold hover:bg-cyan-600 transition disabled:opacity-50"
             >
-              Send Message
+              {loading ? "Sending..." : "Send Message"}
             </button>
+
+            {message && (
+              <p className="mt-4 text-cyan-400 font-medium">
+                {message}
+              </p>
+            )}
           </form>
 
         </div>
