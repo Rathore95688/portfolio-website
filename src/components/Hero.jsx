@@ -19,6 +19,10 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
         >
           <p className="text-cyan-400 text-xl mb-3">
+            <div className="inline-flex items-center gap-2 px-4 py-2 mb-6 rounded-full bg-cyan-500/10 border border-cyan-400/30 text-cyan-300 text-sm font-medium">
+             <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span>
+             Available for Internship & Full-Time Opportunities
+            </div>
             👋 Hello, I'm
           </p>
 
@@ -43,8 +47,10 @@ const Hero = () => {
           </div>
 
           <p className="mt-6 text-gray-400 leading-8 max-w-xl">
-            Passionate about building responsive web applications and ensuring
-            software quality through manual and QA testing.
+            Frontend Developer and QA Tester passionate about creating responsive,
+high-performance web applications with React. I also specialize in
+manual testing, bug reporting, and software quality assurance to
+deliver reliable user experiences.
           </p>
 
 <div className="flex flex-wrap gap-5 mt-10">
