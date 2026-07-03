@@ -24,9 +24,12 @@ const Contact = () => {
             </p>
 
             <div className="space-y-4">
-              <p>
-                📧 <strong>Email:</strong> rathoreharsh641@gmail.com
-              </p>
+              <a
+  href="mailto:rathoreharsh641@gmail.com"
+  className="flex items-center gap-2 hover:text-cyan-400 transition duration-300"
+>
+  📧 <strong>Email:</strong> rathoreharsh641@gmail.com
+              </a>
 
               <p>
                 📱 <strong>Phone:</strong> +91 9568851957
