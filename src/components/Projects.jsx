@@ -1,6 +1,10 @@
+import campusbite from "../assets/campusbite.png";
+import placerise from "../assets/placerise.png";
+import portfolio from "../assets/portfolio.png";
 const projects = [
   {
     title: "Campus Bite",
+    image: campusbite,
     description:
       "A modern food ordering web application with a responsive UI, fast performance, and seamless user experience.",
     tech: ["React", "Vite", "Tailwind CSS"],
@@ -9,6 +13,7 @@ const projects = [
   },
   {
     title: "PlaceRise",
+    image: placerise,
     description:
       "A placement preparation platform providing company information, interview resources, and career guidance.",
     tech: ["React", "JavaScript", "Tailwind CSS"],
@@ -17,6 +22,7 @@ const projects = [
   },
   {
     title: "Portfolio Website",
+    image: portfolio,
     description:
       "A premium portfolio showcasing my frontend development and QA testing skills with a modern UI.",
     tech: ["React", "Framer Motion", "Tailwind CSS"],
@@ -42,9 +48,11 @@ const Projects = () => {
               className="rounded-3xl overflow-hidden bg-gray-800 border border-gray-700 hover:border-cyan-400 hover:-translate-y-3 transition-all duration-300 shadow-lg"
             >
               {/* Placeholder Image */}
-              <div className="h-52 bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center text-6xl">
-                💻
-              </div>
+             <img
+  src={project.image}
+  alt={project.title}
+  className="w-full h-52 object-cover transition-transform duration-500 hover:scale-105"
+              />
 
               <div className="p-6">
 

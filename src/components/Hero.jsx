@@ -98,6 +98,25 @@ deliver reliable user experiences.
               <FaLinkedin />
             </a>
           </div>
+        <div className="grid grid-cols-3 gap-4 mt-10 max-w-lg">
+
+  <div className="bg-white/5 backdrop-blur-lg border border-cyan-500/20 rounded-xl p-4 text-center hover:scale-105 transition">
+    <h2 className="text-3xl font-bold text-cyan-400">3+</h2>
+    <p className="text-gray-400 text-sm mt-1">Projects</p>
+  </div>
+
+  <div className="bg-white/5 backdrop-blur-lg border border-cyan-500/20 rounded-xl p-4 text-center hover:scale-105 transition">
+    <h2 className="text-3xl font-bold text-cyan-400">10+</h2>
+    <p className="text-gray-400 text-sm mt-1">Technologies</p>
+  </div>
+
+  <div className="bg-white/5 backdrop-blur-lg border border-cyan-500/20 rounded-xl p-4 text-center hover:scale-105 transition">
+    <h2 className="text-3xl font-bold text-cyan-400">100%</h2>
+    <p className="text-gray-400 text-sm mt-1">Dedication</p>
+  </div>
+
+        </div>
+        
         </motion.div>
 
         {/* Right */}
@@ -107,15 +126,17 @@ deliver reliable user experiences.
           transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-         <div className="relative">
-  <div className="absolute inset-0 rounded-full bg-cyan-400 blur-3xl opacity-20"></div>
+         <div className="relative flex justify-center items-center">
+
+  <div className="absolute w-96 h-96 bg-cyan-500 rounded-full blur-[120px] opacity-20 animate-pulse"></div>
 
   <img
     src={profile}
     alt="Harsh Rathore"
-    className="relative w-80 h-80 object-cover rounded-full border-4 border-cyan-400 shadow-[0_0_60px_rgba(34,211,238,0.6)] hover:scale-105 transition duration-500"
+    className="relative w-80 h-80 md:w-96 md:h-96 object-cover rounded-full border-[6px] border-cyan-400 shadow-[0_0_60px_rgba(34,211,238,0.6)] hover:scale-105 duration-500"
   />
-  </div>
+
+</div>
         </motion.div>
 
       </div>
