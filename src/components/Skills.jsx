@@ -24,7 +24,7 @@ const Skills = () => {
       id="skills"
       className="bg-gray-950 text-white py-24 px-6"
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="max-w-7xl mx-auto px-6">
 
         <h2 className="text-4xl font-bold text-center mb-12">
           My <span className="text-cyan-400">Skills</span>
