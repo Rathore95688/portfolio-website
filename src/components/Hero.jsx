@@ -1,3 +1,5 @@
+import profile from "../assets/profile.png";
+import resume from "../assets/resume.pdf";
 import { TypeAnimation } from "react-type-animation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -54,13 +56,13 @@ const Hero = () => {
     🚀 View Projects
   </a>
 
-  <a
-    href="/resume.pdf"
-    download
-    className="px-7 py-3 rounded-xl border-2 border-cyan-400 text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-black hover:scale-105 transition-all duration-300"
-  >
-    📄 Download Resume
-  </a>
+ <a
+  href={resume}
+  download
+  className="px-7 py-3 rounded-xl border-2 border-cyan-400 text-cyan-400 font-semibold hover:bg-cyan-400 hover:text-black hover:scale-105 transition-all duration-300"
+>
+  📄 Download Resume
+</a>
 
   <a
     href="#contact"
@@ -99,9 +101,15 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-          <div className="w-80 h-80 rounded-full border-4 border-cyan-400 shadow-[0_0_50px_rgba(34,211,238,0.5)] flex items-center justify-center bg-slate-800">
-            <span className="text-8xl">👨‍💻</span>
-          </div>
+         <div className="relative">
+  <div className="absolute inset-0 rounded-full bg-cyan-400 blur-3xl opacity-20"></div>
+
+  <img
+    src={profile}
+    alt="Harsh Rathore"
+    className="relative w-80 h-80 object-cover rounded-full border-4 border-cyan-400 shadow-[0_0_60px_rgba(34,211,238,0.6)] hover:scale-105 transition duration-500"
+  />
+  </div>
         </motion.div>
 
       </div>
