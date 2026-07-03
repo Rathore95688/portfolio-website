@@ -1,33 +1,31 @@
 import campusbite from "../assets/campusbite.png";
 import placerise from "../assets/placerise.png";
 import portfolio from "../assets/portfolio.png";
+
 const projects = [
   {
     title: "Campus Bite",
-    image: campusbite,
     description:
-      "A modern food ordering web application with a responsive UI, fast performance, and seamless user experience.",
+      "A modern food ordering web application with a responsive UI and smooth user experience.",
     tech: ["React", "Vite", "Tailwind CSS"],
-    github: "https://github.com/Rathore95688",
-    live: "#",
-  },
-  {
-    title: "PlaceRise",
-    image: placerise,
-    description:
-      "A placement preparation platform providing company information, interview resources, and career guidance.",
-    tech: ["React", "JavaScript", "Tailwind CSS"],
-    github: "https://github.com/Rathore95688",
-    live: "#",
+    github: "https://github.com/Rathore95688/CampusBite",
+    live: "https://campusbite-1eqe.onrender.com/user-selection",
   },
   {
     title: "Portfolio Website",
-    image: portfolio,
     description:
-      "A premium portfolio showcasing my frontend development and QA testing skills with a modern UI.",
+      "Personal portfolio showcasing frontend development skills, QA testing knowledge, and projects.",
     tech: ["React", "Framer Motion", "Tailwind CSS"],
-    github: "https://github.com/Rathore95688",
-    live: "#",
+    github: "https://github.com/Rathore95688/portfolio-website",
+    live: "https://portfolio-website-eight-theta-25.vercel.app/#projects",
+  },
+  {
+    title: "PlaceRise",
+    description:
+      "A placement preparation platform providing interview resources, company insights, and career guidance.",
+    tech: ["React", "JavaScript", "Tailwind CSS"],
+    github: "https://github.com/Rathore95688/placerise",
+    live: "https://placerise.vercel.app/",
   },
 ];
 
