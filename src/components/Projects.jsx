@@ -5,6 +5,7 @@ import portfolio from "../assets/portfolio.png";
 const projects = [
   {
     title: "Campus Bite",
+    image: campusbite,
     description:
       "A modern food ordering web application with a responsive UI and smooth user experience.",
     tech: ["React", "Vite", "Tailwind CSS"],
@@ -13,6 +14,7 @@ const projects = [
   },
   {
     title: "Portfolio Website",
+    image: portfolio,
     description:
       "Personal portfolio showcasing frontend development skills, QA testing knowledge, and projects.",
     tech: ["React", "Framer Motion", "Tailwind CSS"],
@@ -21,6 +23,7 @@ const projects = [
   },
   {
     title: "PlaceRise",
+    image: placerise,
     description:
       "A placement preparation platform providing interview resources, company insights, and career guidance.",
     tech: ["React", "JavaScript", "Tailwind CSS"],
