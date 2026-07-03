@@ -20,6 +20,8 @@ const skillCategories = [
       "GitHub",
       "Postman",
       "MySQL",
+      "VS Code",
+      "Render",
     ],
   },
   {
@@ -27,6 +29,7 @@ const skillCategories = [
     skills: [
       "Java",
       "Python",
+      "C",
     ],
   },
   {
