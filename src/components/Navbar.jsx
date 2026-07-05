@@ -40,7 +40,7 @@ const Navbar = () => {
           <span className="text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,.7)]">
             Harsh
           </span>
-          <span className="text-white">.</span>
+          <span className="text-white"></span>
         </a>
 
         {/* Desktop Menu */}
