@@ -1,7 +1,6 @@
 import profile from "../assets/profile.png";
 import resume from "../assets/resume.pdf";
 import { TypeAnimation } from "react-type-animation";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -257,37 +256,7 @@ const Hero = () => {
     className="relative z-10 w-80 h-80 md:w-[400px] md:h-[400px] rounded-full object-cover border-[6px] border-cyan-400 shadow-[0_0_70px_rgba(34,211,238,.55)]"
   />
 
-{/* Social Icons */}
-
-<div className="absolute bottom-0 right-2 md:right-6 flex gap-5 z-20">
-  <a
-    href="https://github.com/Rathore95688"
-    target="_blank"
-    rel="noreferrer"
-    className="group w-16 h-16 rounded-2xl bg-slate-900/90 backdrop-blur-xl border border-cyan-500/30 flex items-center justify-center text-2xl hover:-translate-y-2 hover:scale-110 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,.55)] transition-all duration-300"
-  >
-    <FaGithub className="group-hover:text-cyan-400 transition-colors duration-300" />
-  </a>
-
-  <a
-    href="https://www.linkedin.com/in/harsh-rathore-772124294"
-    target="_blank"
-    rel="noreferrer"
-    className="group w-16 h-16 rounded-2xl bg-slate-900/90 backdrop-blur-xl border border-cyan-500/30 flex items-center justify-center text-2xl hover:-translate-y-2 hover:scale-110 hover:border-cyan-400 hover:shadow-[0_0_35px_rgba(34,211,238,.55)] transition-all duration-300"
-  >
-    <FaLinkedin className="group-hover:text-cyan-400 transition-colors duration-300" />
-  </a>
-</div>
 </motion.div>
-
-{/* Scroll Down */}
-<div className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center text-gray-400">
-  <span className="text-sm mb-2">Scroll Down</span>
-
-  <div className="w-6 h-10 rounded-full border border-cyan-400 flex justify-center">
-    <div className="w-1.5 h-3 bg-cyan-400 rounded-full mt-2 animate-bounce"></div>
-  </div>
-</div>
 
       </div> {/* max-w-7xl */}
 
